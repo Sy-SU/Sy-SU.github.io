@@ -48,7 +48,7 @@ export const awards = [
   {
     name: 'CCPC National Invitational Contest',
     detail: 'Gold Award',
-    context: 'Guizhou / 2026',
+    context: 'Guizhou (2026)',
   },
   {
     name: 'ICPC Asia Regional Contests',
@@ -58,7 +58,7 @@ export const awards = [
   {
     name: 'Group Programming Ladder Tournament',
     detail: 'Second Prize',
-    context: 'National Final / 2025',
+    context: 'National Final (2025)',
   },
 ];
 
