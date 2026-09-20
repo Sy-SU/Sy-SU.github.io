@@ -9,7 +9,7 @@ describe('personal homepage', () => {
     expect(screen.getByRole('heading', { level: 1, name: 'Senyang Su' })).toBeVisible();
     expect(screen.getByRole('img', { name: 'Portrait of Senyang Su' })).toBeVisible();
     expect(screen.queryByText('苏森阳')).not.toBeInTheDocument();
-    expect(screen.getByText(/Master’s Student/, { selector: '.role' })).toBeVisible();
+    expect(screen.getByText(/Master['’]s Student/, { selector: '.role' })).toBeVisible();
     expect(screen.getByRole('heading', { name: 'Background' })).toBeVisible();
     expect(screen.getByText('Information and Computing Science')).toBeVisible();
     expect(screen.getByText('Gold Award')).toBeVisible();
