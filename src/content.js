@@ -16,6 +16,12 @@ export const profile = {
 export const contactLinks = [
   { id: 'email', label: 'Email', href: 'mailto:susenyang@hust.edu.cn' },
   { id: 'github', label: 'GitHub', href: 'https://github.com/Sy-SU' },
+  {
+    id: 'zhihu',
+    label: 'Zhihu',
+    href: 'https://www.zhihu.com/people/hong-lou-meng-zhong-57',
+  },
+  { id: 'bilibili', label: 'Bilibili', href: 'https://space.bilibili.com/85716322' },
   { id: 'scholar', label: 'Scholar', href: null },
   { id: 'cv', label: 'CV', href: null },
 ];

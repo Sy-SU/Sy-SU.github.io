@@ -7,6 +7,8 @@ import {
   GraduationCap,
   Mail,
   Menu,
+  MessageCircle,
+  Tv,
   X,
 } from 'lucide-react';
 import {
@@ -21,6 +23,8 @@ import {
 const contactIcons = {
   email: Mail,
   github: Github,
+  zhihu: MessageCircle,
+  bilibili: Tv,
   scholar: GraduationCap,
   cv: FileText,
 };

@@ -28,6 +28,14 @@ describe('personal homepage', () => {
         .getAllByRole('link', { name: 'GitHub' })
         .find(link => link.getAttribute('href') === 'https://github.com/Sy-SU'),
     ).toBeDefined();
+    expect(screen.getByRole('link', { name: 'Zhihu' })).toHaveAttribute(
+      'href',
+      'https://www.zhihu.com/people/hong-lou-meng-zhong-57',
+    );
+    expect(screen.getByRole('link', { name: 'Bilibili' })).toHaveAttribute(
+      'href',
+      'https://space.bilibili.com/85716322',
+    );
     expect(screen.queryByRole('link', { name: 'Scholar' })).not.toBeInTheDocument();
     expect(screen.queryByRole('link', { name: 'CV' })).not.toBeInTheDocument();
     expect(screen.queryByRole('navigation')).not.toHaveTextContent('Research');
