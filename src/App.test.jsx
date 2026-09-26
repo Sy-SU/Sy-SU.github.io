@@ -45,11 +45,24 @@ describe('personal homepage', () => {
     render(<App />);
 
     expect(screen.getByRole('heading', { name: 'Projects' })).toBeVisible();
+    expect(screen.getByText('VAE vs GAN', { selector: 'h3' })).toBeVisible();
+    expect(
+      screen.getAllByRole('link', { name: /Project website/ }).find(
+        link => link.getAttribute('href') === 'https://sy-su.github.io/VAEvsGAN/',
+      ),
+    ).toBeDefined();
+    expect(
+      screen
+        .getAllByRole('link', { name: 'GitHub' })
+        .find(link => link.getAttribute('href') === 'https://github.com/Sy-SU/VAEvsGAN'),
+    ).toBeDefined();
     expect(screen.getByText('3D Shape Tokenization', { selector: 'h3' })).toBeVisible();
-    expect(screen.getByRole('link', { name: /Project website/ })).toHaveAttribute(
-      'href',
-      'https://sy-su.github.io/3D-Shape-Tokenization/',
-    );
+    expect(
+      screen.getAllByRole('link', { name: /Project website/ }).find(
+        link =>
+          link.getAttribute('href') === 'https://sy-su.github.io/3D-Shape-Tokenization/',
+      ),
+    ).toBeDefined();
     expect(
       screen
         .getAllByRole('link', { name: 'GitHub' })

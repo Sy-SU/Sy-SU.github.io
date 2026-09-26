@@ -70,6 +70,14 @@ export const awards = [
 
 export const projects = [
   {
+    name: 'VAE vs GAN',
+    subtitle: 'Generative Models Reading Report',
+    description:
+      'A comparative reading report on Gaussian mixture models, VAEs, GANs, and diffusion models, with a controlled VAE–DCGAN experiment on MNIST.',
+    websiteUrl: 'https://sy-su.github.io/VAEvsGAN/',
+    codeUrl: 'https://github.com/Sy-SU/VAEvsGAN',
+  },
+  {
     name: '3D Shape Tokenization',
     subtitle: 'Latent Flow Matching Reproduction',
     description:
